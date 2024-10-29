@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+
+.contenedoroption{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    width: 70px;
+}
+
+
+.contenedorboton{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+}

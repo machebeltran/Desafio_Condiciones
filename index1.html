@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío poner y sacar borde</title>
+    <link rel="stylesheet" href="./assets/css/style1.css">
+</head>
+<body>
+    <h1>Mis hijos</h1>
+    <img id="foto" onclick="
+    foto = document.querySelector('#foto')
+        if (foto.style.border === '2px solid red') {
+            foto.style.border = 'none'
+        } else {
+            foto.style.border = '2px solid red'
+        }
+    "
+    src="./assets/img/mishijos.jpg" alt="wallpaper de mis mascotas">
+    
+</body>
+</html>

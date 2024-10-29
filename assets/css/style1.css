@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    font-size: xlarge;
+}
+img{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}

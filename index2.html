@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Stickers</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+<body>
+    <section>
+        <div class="fotoinput" >
+            <img src="./assets/img/sticker1.jpg" alt="sticker1 de slam dunk">
+            <input id="sticker1" type="text">
+         </div>
+         <div class="fotoinput" >
+            <img src="./assets/img/sticker2.jpg" alt="sticker1 de slam dunk">
+            <input id="sticker2" type="text">
+         </div>
+         <div class="fotoinput" >
+            <img src="./assets/img/sticker3.jpg" alt="sticker1 de slam dunk">
+            <input id="sticker3" type="text">
+         </div>
+    </section>
+    <p id="resultado"></p>
+    <div class="contenedorboton" >
+        <button id="boton" onclick="
+            sticker1 = Number(document.querySelector('#sticker1').value)
+            sticker2 = Number(document.querySelector('#sticker2').value)
+            sticker3 = Number(document.querySelector('#sticker3').value)
+
+            suma = sticker1 + sticker2 + sticker3
+            resultado = document.querySelector('#resultado')
+
+            if (suma <= 10) {
+                resultado.innerHTML = 'Llevas ' + suma + ' stickers'
+            } else {
+                resultado.innerHTML = 'Llevas demasiados stickers'
+            }
+            "
+        >Comprobar Stickers</button>
+    </div>  
+</body>
+</html>

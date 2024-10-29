@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Contraseña</title>
+    <link rel="stylesheet" href="./assets/css/style3.css">
+</head>
+<body>
+    <h1>Ingresa el Password</h1>
+    <section>
+        <div class="contenedoroption">
+            <select id="numeros1">
+                <option value="">Seleccione dígito</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="numeros2">
+                <option value="">Seleccione dígito</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="numeros3">
+                <option value="">Seleccione dígito</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <div class="contenedorboton">
+            <button id="ingresar" onclick="
+                digito1 = document.querySelector('#numeros1').value
+                digito2 = document.querySelector('#numeros2').value
+                digito3 = document.querySelector('#numeros3').value
+
+                password = digito1 + digito2 + digito3
+
+                resultado = document.querySelector('#resultado')
+
+                if (password === '911') {
+                    resultado.innerHTML = 'Password 1 correcto'
+                } else if (password === '714') {
+                    resultado.innerHTML = 'Password 2 correcto'
+                } else {
+                    resultado.innerHTML = 'Password incorrecto'
+                }
+            ">Ingresar</button>
+        </div>
+    </section>
+
+    <p id="resultado"></p>
+    
+</body>
+</html>
